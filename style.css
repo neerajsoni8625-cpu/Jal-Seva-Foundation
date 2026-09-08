@@ -1,0 +1,701 @@
+/* =========================================
+   GLOBAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #17324d;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #e8eef3;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    min-height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #087ca7;
+}
+
+.logo-icon {
+    font-size: 30px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar a {
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #0784b3;
+}
+
+.nav-donate {
+    background: #0784b3;
+    color: white !important;
+    padding: 10px 18px;
+    border-radius: 25px;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 650px;
+    background:
+        linear-gradient(120deg, #eaf9ff, #f7fcff);
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.small-title {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #0784b3;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 6vw, 72px);
+    line-height: 1.05;
+    margin: 20px 0;
+    color: #102f49;
+}
+
+.hero h1 span {
+    display: block;
+    color: #0784b3;
+}
+
+.hero-text > p {
+    font-size: 19px;
+    max-width: 620px;
+    color: #5a7081;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #0784b3;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #056d94;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    border: 2px solid #0784b3;
+    color: #0784b3;
+}
+
+.secondary-btn:hover {
+    background: #0784b3;
+    color: white;
+}
+
+
+/* HERO CARD */
+
+.hero-card {
+    background: white;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(30, 100, 130, 0.12);
+}
+
+.water-icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.hero-card h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.hero-card p {
+    color: #667b8a;
+}
+
+.goal {
+    margin-top: 30px;
+}
+
+.goal-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.goal-top strong {
+    color: #0784b3;
+}
+
+.progress {
+    height: 10px;
+    background: #e4edf2;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #0784b3;
+}
+
+.goal-text {
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.section {
+    padding: 100px 0;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-heading span,
+.section-label {
+    color: #0784b3;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.section-heading h2,
+.content h2,
+.fundraising-text h2,
+.contact h2 {
+    font-size: 40px;
+    line-height: 1.15;
+    margin: 15px 0;
+    color: #12334d;
+}
+
+.section-heading p,
+.content p,
+.contact p {
+    color: #657988;
+}
+
+
+/* =========================================
+   MISSION
+========================================= */
+
+.mission {
+    background: white;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    padding: 35px;
+    border: 1px solid #e2edf2;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(30, 100, 130, 0.1);
+}
+
+.card-icon {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #687d8b;
+}
+
+
+/* =========================================
+   PROBLEM
+========================================= */
+
+.problem {
+    background: #f4fafc;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.image-placeholder {
+    min-height: 400px;
+    border-radius: 25px;
+    background:
+        linear-gradient(135deg, #dff6ff, #b8e8f8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image-placeholder span {
+    font-size: 90px;
+}
+
+.image-placeholder p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #24647b;
+}
+
+.check-list {
+    list-style: none;
+    margin-top: 25px;
+}
+
+.check-list li {
+    margin: 15px 0;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.check-list li span {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #0784b3;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   SOLUTION
+========================================= */
+
+.solution {
+    background: white;
+}
+
+.process {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.process-item {
+    text-align: center;
+    max-width: 200px;
+}
+
+.number {
+    width: 65px;
+    height: 65px;
+    margin: auto;
+    border-radius: 50%;
+    background: #e6f7fc;
+    color: #0784b3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.process-item h3 {
+    margin: 15px 0 5px;
+}
+
+.process-item p {
+    font-size: 14px;
+    color: #6b7f8d;
+}
+
+.process-line {
+    width: 80px;
+    height: 2px;
+    background: #c8e8f2;
+}
+
+
+/* =========================================
+   FUNDRAISING
+========================================= */
+
+.fundraising {
+    background: #073c58;
+    color: white;
+}
+
+.fundraising-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.fundraising-text h2 {
+    color: white;
+}
+
+.fundraising-text p {
+    color: #c5dce6;
+    margin: 15px 0;
+}
+
+.big-number {
+    font-size: 55px;
+    font-weight: 800;
+    color: #71d7f5;
+    margin: 15px 0;
+}
+
+.donation-box {
+    background: white;
+    color: #12334d;
+    border-radius: 25px;
+    padding: 40px;
+}
+
+.donation-box h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.donation-box p {
+    color: #647987;
+}
+
+.donation-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+.donation-options div {
+    border: 1px solid #dce8ed;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.full-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.donation-box small {
+    display: block;
+    margin-top: 15px;
+    color: #7b8b94;
+    text-align: center;
+}
+
+
+/* =========================================
+   IMPACT
+========================================= */
+
+.impact {
+    background: #f7fbfd;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.impact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid #e3edf1;
+}
+
+.impact-card strong {
+    font-size: 35px;
+    color: #0784b3;
+}
+
+.impact-card h3 {
+    margin: 10px 0;
+}
+
+.impact-card p {
+    color: #687d8b;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.cta {
+    padding: 90px 20px;
+    text-align: center;
+    background: #0a89b5;
+    color: white;
+}
+
+.cta h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    max-width: 700px;
+    margin: auto;
+    color: #e0f6fc;
+}
+
+.white-btn {
+    background: white;
+    color: #0784b3;
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.contact-details {
+    background: #f2f9fc;
+    padding: 35px;
+    border-radius: 20px;
+}
+
+.contact-details p {
+    margin: 15px 0;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    background: #082b3d;
+    color: white;
+    padding: 35px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer h3 {
+    margin-bottom: 5px;
+}
+
+.footer p {
+    color: #b8cbd3;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        gap: 12px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .hero-content,
+    .two-column,
+    .fundraising-container,
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .process {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .process-line {
+        width: 2px;
+        height: 35px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .nav {
+        flex-direction: column;
+        padding: 15px 0;
+        gap: 15px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        text-align: center;
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .section-heading h2,
+    .content h2,
+    .fundraising-text h2,
+    .contact h2 {
+        font-size: 32px;
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .big-number {
+        font-size: 42px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+}
